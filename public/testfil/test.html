@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .custom-input {
+            padding: 10px;
+            border: 2px solid #00BFFF; /* Light blue border */
+            border-radius: 8px; /* Rounded corners */
+            font-size: 16px; /* Font size */
+            text-align: center; /* Center text */
+            outline: none; /* Removes the default focus outline */
+            width: 150px; /* Set a fixed width */
+            letter-spacing: 5px; /* Space between characters */
+        }
+
+        /* Optional: Change the border color when the input is focused */
+        .custom-input:focus {
+            border-color: #1E90FF; /* Darker blue on focus */
+            box-shadow: 0 0 5px rgba(30, 144, 255, 0.5); /* Blue shadow on focus */
+        }
+    </style>
+    <title>Custom Input Box</title>
+</head>
+<body>
+    <input type="text" class="custom-input" id="uppercase-input" maxlength="9" placeholder="H H J H H">
+
+    <script>
+        const input = document.getElementById('uppercase-input');
+
+        input.addEventListener('input', function () {
+            // Remove any non-alphabetic characters, then format with spaces
+            this.value = this.value
+                .replace(/[^a-zA-Z]/g, '') // Remove non-alphabetic characters
+                .toUpperCase() // Convert to uppercase
+                .split('') // Convert to array
+                .join(' ') // Join with spaces
+                .trim(); // Remove trailing space
+        });
+    </script>
+</body>
+</html>

